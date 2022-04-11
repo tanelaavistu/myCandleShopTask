@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background-color: #121212;
+}
+
+.intro-image{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.123), #000) , url('../img/image1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-image__text a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 3rem;
+    text-shadow: 5 15 #000;
+    text-transform: uppercase;
+    animation-name: hoverIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+.intro-image__text{
+    transition: all 1s;
+}
+
+@keyframes hoverIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.intro-image__text a:hover{
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    font-size: 3rem;
+    text-shadow: 5 15 #000;
+    text-transform: uppercase;
+}
+
+.intro-image__text:hover{
+    transform: scale(1.1);
+}
+
+.intro-image_link a{
+    text-decoration: none;
+    text-shadow: 2px 2px #585858;
+    font-size: 3rem;
+    color: white;
+    transition: all 1s ease-in-out;
+}
+
+.intro-image__link a:hover{
+    color: #e4ce50;
+    text-shadow: none;
+    transform: scale(1.1);
+}
+
+.intro-text{
+    height: 350px;
+    background-color: #121212;
+    color: #fff;
+    padding: 0 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    animation: leftIn;
+    animation-duration: 4s;
+}
+
+@keyframes leftIn{
+    0% {
+        transform: translateX(-1000px);
+        opacity:0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity:1;
+    }
+}
+
+.intro-text__textbox h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.packaging-image{
+    background-image: url('../img/image2.jpg');
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    clip-path: polygon(50% 0%, 80% 10%, 90% 35%, 90% 68%, 80% 90%, 50% 100%, 20% 90%, 8% 69%, 9% 35%, 20% 10%);
+    margin-bottom: 100px;
+}
+
+.packaging-image__text a{
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: white;
+    display: inline-block;
+    text-transform: uppercase;
+    position: relative;
+    animation: rightIn;
+    animation-duration: 6s;
+    transition: all 1s;
+}
+
+@keyframes rightIn{
+    0% {
+        transform: translateX(1000px);
+        opacity:0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity:1;
+    }
+}
+
+.packaging-image__text a:hover{
+    transform: scale(1.1);
+    color: #ffa0a0;
+}
+
+.packaging-text{
+    height: 350px;
+    background-color: #fcb652;
+    color: #121212;
+    padding: 0 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.packaging_text__textbox h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.tutorials-image{
+    background-image: url('../img/image3.jpg');
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tutorials-image__link a{
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: white;
+    transition: all 1s ease-in-out;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.tutorials-image__text a{
+    height: 350px;
+    color: #ffffff;
+    padding: 0 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2rem;
+    animation-name: hoverIn;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    transition: all 1s;
+}
+
+.tutorials-image__text a:hover{
+    color: #ffa0a0;
+    transform: scale(1.1);
+}
+
+@keyframes hoverIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.tutorials-text__textbox h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer{
+    height: 200px;
+    background-color: #800b00;
+    color: white;
+    padding-top: 3rem;
+}
+
+.footer ul li{
+    display: inline-block;
+    margin: 1rem;
+}
+
+.footer ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer ul li a:hover, .footer ul li:hover{
+    color: #f7f19a;
+    transform: scale(1.1);
+}
